@@ -1,4 +1,4 @@
-/* Пример работы с хэш-таблицей и деревом поиска */ 
+/* РџСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹ СЃ С…СЌС€-С‚Р°Р±Р»РёС†РµР№ Рё РґРµСЂРµРІРѕРј РїРѕРёСЃРєР° */ 
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -7,7 +7,7 @@
 #include "Hash_Table.h"
 #include "Stored_Value.h"
 
-/* Пример работы с деревом */
+/* РџСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹ СЃ РґРµСЂРµРІРѕРј */
 static void bin_tree()
 {	
 	Tree *T;
@@ -15,7 +15,7 @@ static void bin_tree()
 	int j;
 	T = NULL;
 	
-	// заполнение дерева
+	// Р·Р°РїРѕР»РЅРµРЅРёРµ РґРµСЂРµРІР°
 	printf("\nBinary search tree\n");
         printf("\nGenerating pseudo-random pairs...\n\n");
 	for (v.c = 'A', j = 0; j < 10; j++, v.c++)
@@ -37,13 +37,13 @@ static void bin_tree()
 	return;
 }
 
-/* Хэш-функция */
+/* РҐСЌС€-С„СѓРЅРєС†РёСЏ */
 int hash_func(Value *v)
 {
 	return (v->c - 'A') % 11;
 }
 
-/* Пример работы с хэш-таблицей */
+/* РџСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹ СЃ С…СЌС€-С‚Р°Р±Р»РёС†РµР№ */
 static void hash_table()
 {
 	HashTable *HT;
@@ -53,7 +53,7 @@ static void hash_table()
 	int j, z = 0;
         printf("Hash table\n");
         
-	// генерация букв
+	// РіРµРЅРµСЂР°С†РёСЏ Р±СѓРєРІ
         printf("\nGenerating pseudo-random pairs...\n");
 	for (j = 0; j < 20; j++)
 	{
